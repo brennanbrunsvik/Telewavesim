@@ -1,0 +1,22 @@
+# Follow the instructions here for installation. 
+# https://paudetseis.github.io/Telewavesim/api.html#installation
+
+# Install environment. 
+# conda env create --file environment.yml 
+
+# If you add or remove packages, you can do so by listing the package in this file, then running this: 
+# conda env update -f environment.yml 
+
+# Once your conda environment is set up, you can install 
+# your (possibly altered) version of telewavesim into your
+# Python environment with: 
+# pip install .
+# This HAS to be done with the tws conda environment active in your terminal
+
+name: tws # TODO change name to load_forecast
+channels: 
+ - conda-forge
+ - anaconda
+dependencies:
+ - python = 3.10 # Matlab will not be able to use a Python interpreter for older versions, only the few most recent versions. 
+ - obspy
